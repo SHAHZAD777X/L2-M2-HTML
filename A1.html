@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form name="form1" onsubmit="validate1()">
+<label>ENTER YOUR NAME</label>
+<input type="text" name="name" id="name" required><br>
+<input type="submit" value="submit">
+<p id="msg"></p>
+</form>
+<script>
+
+function validate1(){
+
+var n=document.forms["forms"]["name"].value;
+if(n=="")
+{
+alert("Name must be filled out");
+return false;
+}
+else{
+
+document.write("your name is saved")
+
+}
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
